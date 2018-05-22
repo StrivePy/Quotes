@@ -10,6 +10,7 @@ class QuoteSpider(scrapy.Spider):
 
     def start_requests(self):
         print('test')
+        print('modify in dev')
 
     def parse(self, response):
         quotes = response.css('.quote')
