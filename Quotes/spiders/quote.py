@@ -9,7 +9,7 @@ class QuoteSpider(scrapy.Spider):
     start_urls = ['http://quotes.toscrape.com/']
 
     def start_requests(self):
-        pass
+        print('test')
 
     def parse(self, response):
         quotes = response.css('.quote')
