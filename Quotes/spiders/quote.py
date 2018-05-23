@@ -8,11 +8,6 @@ class QuoteSpider(scrapy.Spider):
     allowed_domains = ['quotes.toscrape.com']
     start_urls = ['http://quotes.toscrape.com/']
 
-    def start_requests(self):
-        print('test')
-        print('merge')
-        print('modify in dev')
-
     def parse(self, response):
         quotes = response.css('.quote')
         for quote in quotes:
